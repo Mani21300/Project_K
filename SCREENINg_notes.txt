@@ -1,0 +1,548 @@
+ **SCREENING**
+
+28/8/2024
+
+1) read the data ==== SQL + Python
+2) Data preprocess === Python
+3) DATA Analysis(EDA) ==== Python + Statistics+ SQL+Excel+PowerBI
+4) Model development
+  A) Machine learning : Tabular === Sklearn
+  B) deep learning: Images ===== Tf + pytorch +keras
+  C) NLP : Text  ==== NLTK+ SCipy
+  D) GenAI: Tabular+Images+text === Langchain
+  E) Transformers : BERT 
+
+5) Model evaluation 
+
+6) Hyper parameter tuning
+
+7) Deployment 
+    pickle
+    jobli
+
+
+streamlit is a python package=== ML apps
+UI developer
+
+css is html ====Flask FASTAPI
+
+pip install streamlit
+-----------------------
+python--->python file .py
+
+streamlit run <filename>
+
+
+
+Task:
+	we will use already developed model
+	we will pass the input
+	it will give the answer
+streamlit
+pickle
+numpy
+pandas
+
+
+
+
+29/8/2024
+
+Digital era
+1) Data Enginering
+   ETL(Extract Transfer Load)
+   Data Quick checks
+	1) data points are int == str
+	2) no of dependents ==1,2,3+
+2) Data Scientist
+	=analyse the data
+	= develop the model
+	=ML
+	=DL : Transfer learning 
+		Finetuning (change the weights already developed model with your new data
+		Yolo=GenAI
+
+3) ML engineering
+	=deploye
+
+
+
+
+
+1 Mlflow==Azure
+2 Kbuflow=Googe/Azure
+3 autotfx==Gogle
+4 h2O
+
+steps in MLops after model development
+
+1. Model register
+2. Model Development
+3. Model Tracking
+4. Model Version
+5. Model
+
+
+
+
+
+
+
+Artifax ---Model related information artifacts
+========
+sandfox
+
+
+# Mlflow is a cloud platform
+
+# If you want to deploy a ML model we need to create workspace
+
+# this workspace is called experiment
+
+
+30/8/2024
+** create ngrok account **
+** create databricks acount**
+
+-Git install and run CMD -->git
+
+- Classification Matrices
+ - Cohense cup
+ 
+Actual yes = 60 Actual no = 40
+model predict yes = 40 ,no =60
+- TP   
+- TN    
+- FP
+- FN
+
+------> Not possible
+
+class imbalance 
+  - Majority class
+  - Minority class
+Ratio > 2
+  - Model will bias with Majority ==HOW...?        Sathish ==== Pavan Kalyn----> Terrorist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-Regression Matrices
+  - MAPE
+
+
+-Cluster
+ - Elbow Method
+ - Silouthe score
+ - wcss(Inrtia)
+
+-DeepLeraning
+  - IOU : Intersection over union
+  - Jacccobian method
+  - Cross entropy
+  -BELU score
+
+
+NLP:
+  - BELU
+  - Cosine Symmetry
+  - 
+
+
+
+1) Euclidian Distance
+2) Manhatten
+3) Cosine
+4) Jacobbian
+5) BELU
+6) Cross Entropy
+
+
+GENAI:
+  -RAGAS
+  -
+
+
+ 
+
+
+
+
+Tomorrow Azure class at 5:30pm offline and online 101 room
+
+** Git install  
+
+
+2/9/2024
+- 140 questions
+- Invoice Project
+Tomorrow
+NLP
+
+
+
+ToDay
+
+
+
+1. we will create repositary
+2. we will upload the codes
+3. this code base called as main
+4. we will clone the entire code
+5. we will create our own branch : dev
+6: we will  
+
+
+
+1. You need to clone the repository
+
+          ############################################
+          # command: git clone <repository url>
+          ############################################
+
+            git clone https://github.com/OmkarNallagoni/EDA.git
+
+
+2. check your brnach name :
+
+          ##################################
+             Command: git branch -a   
+                    or 
+                    git branch
+         ###################################
+
+  
+   main
+   dev
+   remotes/origin/main   ==> only main is there/dev branch is not able 
+                             to see in UI
+   remotes/origin/dev    ==> both main and dev able to see
+
+
+3. Let's create a branch name : dev
+            ##########################
+            # comand: git branch dev #
+            ##########################
+
+     Spl condition:
+        In order to see the cretaed branch in github
+
+                 #################################  
+                   git push origin <branch_name>
+                   git push origin dev
+                ##################################
+ 
+4. * marks means : currently you are on which branch 
+     *main
+     what ever I modify the codes ====== > directly impact main branch
+
+5. we will move to dev branch
+   *dev
+          #################################################
+            command:  git checkout <branch_name>
+                      git checkout dev
+          ##################################################
+
+6. In order to create remote branch
+   command: git push origin <branch_name>
+            git push origin dev
+
+7. I will start my developemnts
+
+            ###########################################
+                       Modify any file
+            ###########################################
+
+8. After we modify/ any developents we need to push that changes
+   then only we can able to see in github
+
+9. First check the status: 
+   status will privide which files are modified or created etc
+                  #######################
+                  # command: git status #
+                  #######################
+
+10. Now add the changes:
+              ########################
+              # command: git add .   #
+              ########################
+
+11. Now commit che changes
+
+                git config --global user.email omkar.nallagoni@gamil.com
+              ################################################
+               command :  git commit -am<msg>
+                          git commit -am "workspace updated"
+             ###################################################
+
+            a: automatically you can track 
+            m: modified files before commit
+
+12. Optional
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+
+                ####################################################################
+                git config --global user.email "omkar.nallagoni@gmail.com"
+                ################################################################
+
+13. Finally we will push the changes 
+     
+          ###############################################
+               command: git push origin <branch name>
+                        git push origin dev
+         #################################################
+
+after codes will push in your feature branch
+you need merge with main branch 
+
+
+13. Raise a PR: PUll REQUEST 
+
+
+=================================================================
+clone the main code base
+created a branch
+we modified the file
+we push the changes on the feature branch
+===================================================================
+
+
+
+branch need to be deleted locally:  
+
+         ################################################
+            command: git branch -D <branch_name>
+                     git branch --delete <branch_name>
+        ###################################################
+
+Note: Branch will not delete if you are on that currently
+     So first checkout to main, then delete branch
+       ###################################################
+          git checkout main 
+       #####################################################
+
+branch need to be deleted remote 
+
+           ###############################################
+             Command: git push origin -d <branch_name>
+           ################################################
+
+
+
+3/9/2024
+
+NLP
+- Embedding                                           #king-Man+Woman=Queen
+**Embedding Models**
+## General Word Embeddings
+
+**1. Bag of Words (BoW) and TF-IDF**
+
+**2. Latent Semantic Analysis (LSA)**
+
+**3. Word2Vec developed by Google**
+
+**4. GloVe developed by Standford University**
+
+**5. FastText developed by FaceBook**
+
+**6. Contextual Embeddings**
+
+- ELMo : ELMo (Embeddings from Language Models): Developed by Allen Institute for AI
+
+- BERT (Bidirectional Encoder Representations from Transformers): Developed by HuggingFace now takeover by Google
+
+- GPT (Generative Pre-trained Transformer): Developed by OpenAI
+
+**7. Current Trending Models**
+
+- GPT-2,GPT-3 and GPT series by OpenAI
+
+- BERT Variants: Models like RoBERTa, ALBERT, and DistilBERT have improved upon BERT
+
+- T5 (Text-To-Text Transfer Transformer): Developed by Google, T5 treats all NLP tasks as text-to-text problems, unifying multiple tasks under a single framework.
+
+- CLIP (Contrastive Language-Image Pretraining): Developed by OpenAI, CLIP learns representations that align images and text, enabling models to perform tasks like zero-shot image classification.
+    
+- Mistral AI: GenAI model
+
+- Google Gemini AI : GenAI model
+
+
+Drawback count vectoriger:
+- Semantic meanings is not included : its not follow the grammar(Vocabulary)
+----more Repeating word is more importent
+ 
+TF-IDF
+---More repeating word is less important
+-- sematic meanings --Draw back
+
+
+4/9/24
+
+NLP:
+-TF-IDF
+-BOW
+-Word2Vec
+-Bert
+-GENAI
+-Langchain
+
+1. any model numerical representation
+2. we can convert text to number
+3. Encoding
+4. Embeding
+Embeding in NLP
+1.BOW
+2.TFIDF
+
+In this both Main Draw Back is Semantic Meaning
+
+so, WORD2VEC --->google:Word2vec uses a large corpus of text to create vector representations of words that capture the meaning of the word based on the surrounding words
+	Pre-trained vectors trained on a part of the Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases. The phrases were obtained using a simple data-driven approach described in 'Distributed Representations of Words and Phrases and their Compositionality
+Hidden layer nurons are 300
+how to train --fine truning
+how to use word2vec---transfrom
+
+- 1. Skip-Gram Model
+in word2vec each word become 300 vectors
+
+
+1. Read the data
+2. tokenize the each sentence/data
+3. this tokens pass to the word2vec model
+4. we will get vectors of each word
+5. created the sentence vector
+6. 100 review === 100 vector == 300
+7. train and test
+8. classification model
+
+
+I love meachine learning
+i -->[300]
+love --->[300]
+mechine--->[300]
+learning --->[300]
+by doing average of this we pass to the model
+
+HW:- Run one classification model
+
+5/9/24
+#Hugging faces ---> 908,024
+#Lanchain 
+#Sikit-learn
+
+
+# In Hugging faces-->Fill Mask-->google-bert/bert-base-uncased
+
+*Bert Tokenizer*
+IN order to get the embedding we need tokenize the words
+
+
+6/9/2024
+sentence(i love paris , we are learning bert embedding)
+['i',
+ 'love',
+ 'paris',
+ ',',
+ 'we',
+ 'are',
+ 'learning',
+ 'bert',
+ 'em',
+ '##bed',
+ '##ding',
+ '##s']
+
+Length you want to process :512
+-------
+veera :n1 [veera,<pad>,<pad>...] ==[n1,0's 511]
+veera mani : n1, n2
+veera mani kanta : n1,n2,n3
+
+sentences ---> tokens ---> ids ---> attention mask--->embedding--->
+
+model_name = "bert-base-uncased"--->NLR , Classification
+Model Class (BertForMaskedLM):**
+
+9/9/24
+
+model1 : Having the weihts
+another model :
+
+
+                          #Dataset.from_pandas
+
+word ---> token --->tokenID --->
+
+
+
+Model development
+1. Initlize the model
+2. model.compile(optimizers)
+3. model.fit()
+4. model.evaluate
+5. model.prediction
+
+
+1114 sample take only 50 or 100
+
+16 batches
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Deploye the models
+
